@@ -1,0 +1,40 @@
+.root {
+  display: flex;
+  justify-content: center;
+  height: 360px;
+  margin-top: 30px;
+}
+
+.album {
+  display: flex;
+  flex-direction: column;
+}
+
+.albumName {
+  display: flex;
+  justify-content: center;
+  color: #d3d3d3;
+  font-size: 16px;
+  font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+}
+
+.image {
+  margin-bottom: 10px;
+  height: 266px;
+  width: 300px;
+}
+
+.songAndDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.songDescription {
+  justify-content: center;
+  color: #d3d3d3;
+  display: flex;
+  font-family: ‘Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
+  font-size: 21px;
+  margin: 40px 0;
+}

@@ -38,6 +38,7 @@
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
+    "axios": "^0.15.2",
     "babel-preset-stage-1": "^6.1.18",
     "cheerio": "^0.20.0",
     "classnames": "^2.2.5",
