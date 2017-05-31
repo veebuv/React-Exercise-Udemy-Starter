@@ -22,16 +22,27 @@ module.exports = {
     'react/lib/ReactContext': true,
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
-        loaders: ['react-hot', 'babel'], exclude: /node_modules/,
+        use: [{ loader: 'react-hot-loader' }, { loader: 'babel-loader' }], exclude: /node_modules/,
       },
       {
         test: /\.css$/,
-        loaders: [
-          'style?sourceMap',
-          'css?modules&importLoaders=1&localIdentName=[path]___[name]__[local]___[hash:base64:5]',
+        use: [{
+          loader: 'style-loader',
+          options: {
+            sourceMap: true,
+          },
+        },
+        {
+          loader: 'css-loader',
+          options: {
+            modules: true,
+            importLoaders: 1,
+            localIdentName: 'name]_[local]_[hash:base64:5]',
+          },
+        },
         ],
       },
     ],
